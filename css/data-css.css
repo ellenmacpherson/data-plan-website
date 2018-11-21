@@ -8,6 +8,11 @@ nav  {
 
 }
 
+a.top-links.nav-item.nav-link.active {
+  padding: 10px 20px;
+  color: #FAFAFA;
+}
+
 a.top-links.nav-item.nav-link {
   padding: 10px 20px;
   color: #FAFAFA;
@@ -21,9 +26,14 @@ a.top-links.nav-item.nav-link {
   height: 600px;
 }
 
+.container-fluid {
+  width: 70%;
+}
+
 button {
   background-color: #330;
   padding: 20px;
+  width: 150px;
   margin: 10px;
   color: #FAFAFA;
   border: none;
@@ -55,6 +65,10 @@ ul li {
   padding: 20px;
 }
 
+h1 {
+  padding-top: 100px;
+  font-size: 78px;
+}
 
 h3 {
 
@@ -66,12 +80,85 @@ h4 {
   padding: 20px;
 }
 
+.nav-bottom {
+  background-color: #FE1F4E;
+}
+
+a.bottom-links.nav-item.nav-link.active {
+  padding: 10px 20px;
+  color: #FAFAFA;
+}
+
+a.bottom-links.nav-item.nav-link {
+  padding: 10px 20px;
+  color: #FAFAFA;
+}
+
+#contact-bar ul li {
+  display: inline;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#contact-bar ul {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#call-us {
+  float: right;
+  text-align: right;
+}
+
+footer {
+  background: #333;
+  color: white;
+}
+
+.legal ul li {
+  display: inline;
+  padding: 20px;
+  font-size: 20px;
+
+}
 
 
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.5;
+}
 
+/* Set a specific color for each brand */
 
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
 
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+    /*Insta*/
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+
+}
 
 
 
