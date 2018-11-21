@@ -1,31 +1,42 @@
-var choices = ["3GB", "6GB", "15GB", "30GB", "Monthly", "Annually"];
-
-var price = 0.00
-
-/*var dataChoice = 0;
-var dataPrice = 0;
-var contractChoice;*/
+/*Hiding contract question and pay part of calc*/
 
 var choices = ["3GB", "6GB", "15GB", "30GB", "monthly", "annually"];
 
 var price = 0;
+var wolf_gb =' '
+var wolf_price =' '
+
+
+$(".contract-question").hide ();
+$(".pay").hide ();
 
 // wolf price calculations and price display//
 
 $(".wolf-price").click(function(event) {
-  var wolf_gb = this.getAttribute("data-gb");
-  var wolf_price = this.getAttribute("data-price");
+  $(".contract-question").show();
+  wolf_gb = this.getAttribute("data-gb");
+  wolf_price = this.getAttribute("data-price");
   price = wolf_price;
   console.log(wolf_price);
 });
 
+
 $(".month").click(function(event) {
+  $(".pay").show();
   $("#price").text(price);
+  $("#gb-selection").text(wolf_gb + " /month");
+  $("#contract-selection").text(price +" /month");
 });
 
 $(".year").click(function(event) {
+  $(".pay").show();
   $("#price").text(price * 12);
+  $("#gb-selection").text(wolf_gb + " /year");
+  $("#contract-selection").text((price*12) + " /year");
 });
+
+
+
 
 
 

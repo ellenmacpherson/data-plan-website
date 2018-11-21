@@ -10,7 +10,7 @@ nav  {
 
 a.top-links.nav-item.nav-link {
   padding: 10px 20px;
-  color: white;
+  color: #FAFAFA;
 
 }
 
@@ -21,13 +21,34 @@ a.top-links.nav-item.nav-link {
   height: 600px;
 }
 
+button {
+  background-color: #330;
+  padding: 20px;
+  margin: 10px;
+  color: #FAFAFA;
+  border: none;
+  box-shadow: none;
+}
+
+button:focus {
+  background-color: #FE1F4E;
+  border: none;
+  box-shadow: none;
+}
+
 main {
   padding: 20px;
   text-align: center;
 }
 
+p {
+  font-size: 28px;
+
+}
+
 ul li {
   list-style: none;
+  font-size: 28px;
 }
 
 .features {
