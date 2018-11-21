@@ -52,33 +52,21 @@
       <h2>Calculate your cost</h2>
       <h3>How much data do you think you'll need per month?</h3>
 
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>3GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">6GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">15GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">30GB
-        </label>
+      <div class="gbButtons">
+        <button id="3GB" value="£15">3GB</button>
+        <button id="6GB" value="£17">6GB</button>
+        <button id="15GB" value="£22">15GB</button>
+        <button id="30GB" value="£27">30GB</button>
       </div>
+
 
       <h3>How long do you want to sign up for?</h3>
 
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>Monthly
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">Annually
-        </label>
-      </div>
+      <button class="wolf-contract" >Monthly</button>
+      <button class="wolf-contract" value="">Annually</button>
 
-      <h4 class="price-calculation">You'll pay:</h4>
+
+      <h4 class="price-calculation">You'll pay: <span id="you_pay"></span></h4>
 
       <button class=buy-button-2>Buy Now</button>
 
@@ -134,7 +122,8 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
     </body>
 
 </html>
