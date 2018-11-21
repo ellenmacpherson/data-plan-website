@@ -23,3 +23,8 @@ $(".wolf-annually").click(function(event) {
   $("#contract").text(contractChoice);
   return contractChoice;
 });
+
+$(".calculate-price").click(function(event) {
+
+
+});
