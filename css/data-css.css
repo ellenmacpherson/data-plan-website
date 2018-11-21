@@ -12,7 +12,6 @@ a.top-links.nav-item.nav-link {
   padding: 10px 20px;
   color: white;
 
-
 }
 
 .jumbotron-lone-wolf {
@@ -22,13 +21,31 @@ a.top-links.nav-item.nav-link {
   height: 600px;
 }
 
-h2 {
-
+main {
+  padding: 20px;
+  text-align: center;
 }
+
+ul li {
+  list-style: none;
+}
+
+.features {
+  padding: 20px;
+}
+
 
 h3 {
 
+padding: 20px;
+
 }
+
+h4 {
+  padding: 20px;
+}
+
+
 
 
 
