@@ -52,22 +52,24 @@
       <h2>Calculate your cost</h2>
       <h3>How much data do you think you'll need per month?</h3>
 
-        <button class="gbButtons" value="3GB" data-gb="3GB" data-price="£15">3GB</button>
-        <button class="gbButtons" value="6GB" data-gb="6GB" data-price="£17">6GB</button>
-        <button class="gbButtons" value="15GB" data-gb="15GB" data-price="£22">15GB</button>
-        <button class="gbButtons" value="30GB" data-gb="30GB" data-price="£27">30GB</button>
 
+        <button class="wolf-price" value="3GB" data-gb="3GB" data-price="15.00">3GB</button>
+        <button class="wolf-price" value="6GB" data-gb="6GB" data-price="17.00">6GB</button>
+        <button class="wolf-price" value="15GB" data-gb="15GB" data-price="22.00">15GB</button>
+        <button class="wolf-price" value="30GB" data-gb="30GB" data-price="27.00">30GB</button>
 
       <h3>How long do you want to sign up for?</h3>
 
-      <button class="wolf-monthly" value="Monthly">Monthly</button>
-      <button class="wolf-annually" value="Annually">Annually</button>
+      <button class="month" value="Monthly">Monthly</button>
+      <button class="year" value="Annually">Annually</button>
 
-      <button class="calculate-price" value="Annually">Calculate</button>
 
-      <h4 class="dataChoice">GB: <span id=gb></span></h4>
-      <h4 class="contractChoice">Contract: <span id=contract></span></h4>
-      <h4 class="price-calculation">You'll pay: <span id="you_pay"></span></h4>
+      <!--<h4 class="dataChoice">GB: <span id=gb></span></h4>
+      <h4 class="contractChoice">Contract: <span id=contract></span></h4>-->
+
+      <h4>You'll pay: </h4>
+      <p>£<span id="price">0.00</span></p>
+
 
       <button class=buy-button-2>Buy Now</button>
 
