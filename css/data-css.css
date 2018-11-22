@@ -34,8 +34,40 @@ a.top-links.nav-item.nav-link {
 
 }
 
+#family-jumbo {
+  background-image: url("../images/family1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+#chatterbox-jumbo {
+  background-image: url("../images/chatterbox-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+#contact-jumbo {
+  background-image: url("../images/contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+
 h1.hero-header {
   color: #FAFAFA;
+}
+
+.contact-h1 {
+  color: white;
+  font-size: 90px;
+}
+
+.contact-h2 {
+  color: white;
+  font-size: 40px;
 }
 
 h2.index-h2 {
@@ -293,4 +325,15 @@ footer {
   /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+  }
+
+
+
+  /*contact page*/
+
+  .jumbotron-contact {
+      background-image: url("..images/contact-us.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 600px;
   }
