@@ -26,6 +26,44 @@ a.top-links.nav-item.nav-link {
   height: 600px;
 }
 
+.jumbotron-index {
+  background-image: url("../images/brand-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+}
+
+h1.hero-header {
+  color: #FAFAFA;
+}
+
+h2.index-h2 {
+  color: #FAFAFA;
+}
+
+.arrow {
+transform: rotate(90deg);
+position: relative;
+text-align: center;
+margin: 0 auto;
+display: block;
+
+
+
+}
+.header-arrow {
+  font-size: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header-arrow:hover {
+  text-decoration: none;
+  color: #FE1F4E;
+  text-align: center;
+}
+
 .container-fluid {
   width: 70%;
 }
@@ -49,7 +87,26 @@ button:focus {
 main {
   padding: 20px;
   text-align: center;
+
+
 }
+
+.plan-cards {
+  margin: 50px auto;
+
+}
+
+
+
+#plans {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-img-top {
+  background-image: url("images/family1.jpg");
+}
+
 
 p {
   font-size: 28px;
