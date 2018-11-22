@@ -60,6 +60,18 @@ h1.hero-header {
   color: #FAFAFA;
 }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+header p{
+  color: white;
+}
+
 .contact-h1 {
   color: white;
   font-size: 90px;
@@ -298,7 +310,7 @@ footer {
   /* Add styles to the form container */
   .form-container {
     max-width: 300px;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
   }
 
@@ -310,7 +322,7 @@ footer {
     border: none;
     background: #f1f1f1;
     resize: none;
-    min-height: 200px;
+    min-height: 150px;
   }
 
   /* When the textarea gets focus, do something */
@@ -321,7 +333,7 @@ footer {
 
   /* Set a style for the submit/login button */
   .form-container .btn {
-    background-color: #4CAF50;
+    background-color: #FE1F4E;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -331,9 +343,21 @@ footer {
     opacity: 0.8;
   }
 
+form.form-container.fixed-bottom {
+  padding: 0px 40px;
+  border: 1px solid #333;
+}
+
   /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
+  button.btn-cancel {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
   }
 
   /* Add some hover effects to buttons */
@@ -350,4 +374,16 @@ footer {
       background-size: cover;
       background-repeat: no-repeat;
       height: 600px;
+  }
+
+  /*chat box buttons */
+
+  .btn-chat {
+    background-color: #FE1F4E;
+  }
+
+  h3.chat {
+    font-size: 20px;
+    padding: 10px;
+
   }
