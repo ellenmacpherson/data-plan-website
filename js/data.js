@@ -116,3 +116,22 @@ $(".year").click(function(event) {
   $("#gb-selection-family").text(chatterbox_gb + " /month");
   $("#contract-selection").text((total_price) + " /month");
 });
+
+// LIVE CHAT CHAT BOX
+$(".chat-popup-body").hide();
+
+$(".chat").click(function (event) {
+  $(".chat-popup-body").show()
+});
+
+function openForm() {
+document.getElementById("myForm").style.display = "block";
+}
+
+/*function closeForm() {
+document.getElementById("myForm").style.display = "none";
+}*/
+
+$(".btn-cancel").click(function(event) {
+  $(".chat-popup-body").hide();
+})
