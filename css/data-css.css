@@ -35,14 +35,14 @@ a.top-links.nav-item.nav-link {
 }
 
 #family-jumbo {
-  background-image: url("../images/family1.jpg");
+  background-image: url("../images/family-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
 }
 
 #chatterbox-jumbo {
-  background-image: url("../images/chatterbox-2.jpg");
+  background-image: url("../images/chatterbox-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -116,11 +116,25 @@ button:focus {
   box-shadow: none;
 }
 
+.btn-primary {
+  background-color: #330;
+  padding: 20px;
+  width: 150px;
+  margin: 10px;
+  color: #FAFAFA;
+  border: none;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  background-color: #FE1F4E;
+  border: none;
+  box-shadow: none;
+}
+
 main {
   padding: 20px;
   text-align: center;
-
-
 }
 
 .plan-cards {
@@ -136,7 +150,7 @@ main {
 }
 
 .card-img-top {
-  background-image: url("images/family1.jpg");
+  background-image: url("images/family-large.jpg");
 }
 
 
