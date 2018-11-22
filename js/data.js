@@ -104,15 +104,15 @@ $(".family-gb-price").click(function(event) {
 });
 
 $(".month").click(function(event) {
-  $(".pay-chatterbox").show();
-  $("#price-chatterbox").text(total_price);
-  $("#gb-selection-chatterbox").text(chatterbox_gb + " /month");
+  $(".pay-family").show();
+  $("#price-family").text(total_price);
+  $("#gb-selection-family").text(chatterbox_gb + " /month");
   $("#contract-selection").text(total_price+" /month");
 });
 
 $(".year").click(function(event) {
-  $(".pay-chatterbox").show();
-  $("#price-chatterbox").text((total_price * 12) + " /year");
-  $("#gb-selection-chatterbox").text(chatterbox_gb + " /month");
+  $(".pay-family").show();
+  $("#price-family").text((total_price * 12) + " /year");
+  $("#gb-selection-family").text(chatterbox_gb + " /month");
   $("#contract-selection").text((total_price) + " /month");
 });
