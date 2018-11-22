@@ -5,7 +5,10 @@ var choices = ["3GB", "6GB", "15GB", "30GB", "monthly", "annually"];
 var price = 0;
 var wolf_gb =' '
 var wolf_price =' '
-
+var chatterbox_gb =' '
+var chatterbox_price =' '
+var mins_number = ' '
+var mins_price = ' '
 
 $(".contract-question").hide ();
 $(".pay").hide ();
@@ -36,30 +39,37 @@ $(".year").click(function(event) {
 });
 
 
+// CHATTERBOX calculator
 
+$(".minutes-question").hide();
+$(".contract-question-chatterbox").hide ();
+$(".pay-chatterbox").hide();
 
-
-
-
-/*$(".gbButtons").click(function(event) {
-  var dataChoice = this.getAttribute("data-gb");
-  $("#gb").text(dataChoice);
-  return dataChoice;
+$(".chatterbox-gb-price").click(function(event) {
+  $(".minutes-question").show();
+  chatterbox_gb = this.getAttribute("data-gb");
+  chatterbox_price = this.getAttribute("data-price");
+  console.log(chatterbox_price);
 });
 
-$(".wolf-monthly").click(function(event) {
-  var contractChoice = this.getAttribute("value");
-  $("#contract").text(contractChoice);
-  return contractChoice;
+$(".chatterbox-mins-price").click(function (event) {
+  $(".contract-question-chatterbox").show();
+  mins_number = this.getAttribute("data-mins");
+  mins_price = this.getAttribute("data-price-chatterbox");
+  console.log(mins_price + chatterbox_price);
+
 });
 
-// Everything down to this point works
-
-
-$(".wolf-annually").click(function(event) {
-  var contractChoice = this.getAttribute("value");
-  $("#contract").text(contractChoice);
-  return contractChoice;
+$(".month").click(function(event) {
+  $(".pay-chatterbox").show();
+  $("#price").text(price);
+  $("#gb-selection").text(wolf_gb + " /month");
+  $("#contract-selection").text(price +" /month");
 });
 
-/*data-price = parsInt(this.getAtrribute.("data-price"));*/
+$(".year").click(function(event) {
+  $(".pay").show();
+  $("#price").text(price * 12);
+  $("#gb-selection").text(wolf_gb + " /year");
+  $("#contract-selection").text((price*12) + " /year");
+});

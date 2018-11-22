@@ -4,101 +4,100 @@
 
 <head>
 
-  <title>Chatterbox Data Plan</title>
+  <title>Lone Wolf Data Plan</title>
   <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/data-css.css">
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">EO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="lone-wolf.html">Lone Wolf</a>
-        <a class="nav-item nav-link" href="chatterbox.html">Chatterbox</a>
-        <a class="nav-item nav-link" href="family.html">Family</a>
-        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="top-links nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+        <a class="top-links nav-item nav-link" href="lone-wolf.html">Lone Wolf</a>
+        <a class="top-links nav-item nav-link" href="chatterbox.html">Chatterbox</a>
+        <a class="top-links nav-item nav-link" href="family.html">Family</a>
+        <a class="top-links nav-item nav-link" href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
 
-  <header class="jumbotron">
-    <div class="container">
+  <header class="jumbotron-lone-wolf">
+    <div class="container-fluid">
       <h1>Chatterbox</h1>
-      <h2>Sim card with data, minutes and texts</h2>
-      <p>Starting at £17/month.</p>
+      <h2>Sim card with data, minutes and texts.</h2>
+      <p>Starting at £17/month</p>
       <button class=buy-button-1>Buy</button>
     </div>
 
   </header>
 
   <main>
-    <section class="features">
+    <section class="features container">
       <h2>What do I get?</h2>
       <ul>
-        <li>From 1GB to 20GB data</li>
-        <li>From 180 to unlimited minutes</li>
+        <li>From 180 to unlimited minutes.</li>
+        <li>Between 1GB to 20GB data</li>
+        <li>Unlimited texts</li>
       </ul>
     </section>
 
-    <section class="calculator">
+    <section class="calculator container">
+      <div class="data-question">
       <h2>Calculate your cost</h2>
       <h3>How much data do you think you'll need per month?</h3>
 
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>1GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">6GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">10GB
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">20GB
-        </label>
+
+        <button class="chatterbox-gb-price" value="1GB" data-gb="1GB" data-price="14.00">1GB</button>
+        <button class="chatterbox-gb-price" value="6GB" data-gb="6GB" data-price="18.00">6GB</button>
+        <button class="chatterbox-gb-price" value="10GB" data-gb="10GB" data-price="20.00">10GB</button>
+        <button class="chatterbox-gb-price" value="20GB" data-gb="20GB" data-price="30.00">20GB</button>
+
       </div>
 
-      <h3>How many minutes do you think you'll need per month?</h3>
-
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>180
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">300
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">600
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option3" autocomplete="off">Unlimited
-        </label>
+  <div="minutes-question">
+    <h3>How many minutes do you think you'll need per month?</h3>
+  <button class="chatterbox-mins-price" value="180" data-mins="180" data-price-chatterbox="3.00">180 mins</button>
+  <button class="chatterbox-mins-price" value="300" data-mins="300" data-price-chatterbox="5.00">300 mins</button>
+  <button class="chatterbox-mins-price" value="600" data-mins="600" data-price-chatterbox="10.00">600 mins</button>
+  <button class="chatterbox-mins-price" value="Unlimited" data-mins="Unlimited" data-price-chatterbox="12.00">Unlimited</button>
       </div>
 
+      <div class="contract-question-chatterbox">
       <h3>How long do you want to sign up for?</h3>
 
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked>Monthly
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" name="options" id="option2" autocomplete="off">Annually
-        </label>
+      <button class="month" value="Monthly">Monthly</button>
+      <button class="year" value="Annually">Annually</button>
+
+
+      <!--<h4 class="dataChoice">GB: <span id=gb></span></h4>
+      <h4 class="contractChoice">Contract: <span id=contract></span></h4>-->
+
       </div>
 
-      <h4 class="price-calculation">You'll pay:</h4>
+      <div class="pay-chatterbox">
 
+      <h4>You'll pay: </h4>
+      <p>£<span id="price">0.00</span></p>
+
+      <h4>You've selected: </h4>
+      <p><span id="gb-selection"></span></p>
+      <p>£<span id="contract-selection"></span></p>
+
+      <div>
       <button class=buy-button-2>Buy Now</button>
+      </div>
 
+      </div>
 
   </section>
 
@@ -119,39 +118,45 @@
 
     <footer>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="nav-bottom navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="lone-wolf.html">Lone Wolf</a>
-            <a class="nav-item nav-link" href="chatterbox.html">Chatterbox</a>
-            <a class="nav-item nav-link" href="family.html">Family</a>
-            <a class="nav-item nav-link" href="contact.html">Contact</a>
+            <a class="bottom-links nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="bottom-links nav-item nav-link" href="lone-wolf.html">Lone Wolf</a>
+            <a class="bottom-links nav-item nav-link" href="chatterbox.html">Chatterbox</a>
+            <a class="bottom-links nav-item nav-link" href="family.html">Family</a>
+            <a class="bottom-links nav-item nav-link" href="contact.html">Contact</a>
           </div>
         </div>
       </nav>
 
       <div class="container">
-      <div class="row">
-        <a href="https://facebook.com" class="fa fa-facebook">Facebook</a>
-        <a href="https://twitter.com" class="fa fa-twitter">Twitter</a>
-        <p>Call us on: 01234 567 890</p>
+      <div class="row" id="contact-bar">
+        <ul>
+        <li><a href="https://facebook.com" class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com" class="fa fa-twitter"></a></li>
+        <li><a href="https://instagram.com" class="fa fa-instagram"></a></li>
+        <li id="call-us"><p>Call us on: 01234 567 890</p></li>
+      </ul>
       </div>
-      <div class="row">
-        <p>EO &#169; 2018</p>
-        <a href='#'>Privacy</a>
-        <a href='#'>Terms of Use</a>
-        <a href='#'>Sitemap</a>
+      <div class="row legal" id>
+        <ul>
+          <li href="#">EO &#169; 2018</li>
+          <li href="#">Privacy</li>
+          <li href="#">Terms of Use</li>
+          <li href="#">Sitemap</li>
+        </ul>
         </div>
         </div>
     </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
     </body>
 
 </html>
