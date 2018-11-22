@@ -9,6 +9,7 @@ var chatterbox_gb =' '
 var chatterbox_price =' '
 var mins_number = ' '
 var mins_price = ' '
+var total_chatterbox_price  =' '
 
 $(".contract-question").hide ();
 $(".pay").hide ();
@@ -42,34 +43,36 @@ $(".year").click(function(event) {
 // CHATTERBOX calculator
 
 $(".minutes-question").hide();
-$(".contract-question-chatterbox").hide ();
+$(".contract-question-chatterbox").hide();
 $(".pay-chatterbox").hide();
 
 $(".chatterbox-gb-price").click(function(event) {
   $(".minutes-question").show();
-  chatterbox_gb = this.getAttribute("data-gb");
-  chatterbox_price = this.getAttribute("data-price");
+  chatterbox_gb = this.getAttribute("data-gb-chatterbox");
+  chatterbox_price = parseInt(this.getAttribute("data-gb-chatterbox-price"));
   console.log(chatterbox_price);
 });
 
 $(".chatterbox-mins-price").click(function (event) {
   $(".contract-question-chatterbox").show();
   mins_number = this.getAttribute("data-mins");
-  mins_price = this.getAttribute("data-price-chatterbox");
+  mins_price = parseInt(this.getAttribute("data-mins-chatterbox-price"));
   console.log(mins_price + chatterbox_price);
+  total_price = mins_price + chatterbox_price;
+  console.log(total_price);
 
 });
 
 $(".month").click(function(event) {
   $(".pay-chatterbox").show();
-  $("#price").text(price);
-  $("#gb-selection").text(wolf_gb + " /month");
-  $("#contract-selection").text(price +" /month");
+  $("#price-chatterbox").text(total_price);
+  $("#gb-selection-chatterbox").text(chatterbox_gb + " /month");
+  $("#contract-selection").text(total_price+" /month");
 });
 
 $(".year").click(function(event) {
-  $(".pay").show();
-  $("#price").text(price * 12);
-  $("#gb-selection").text(wolf_gb + " /year");
-  $("#contract-selection").text((price*12) + " /year");
+  $(".pay-chatterbox").show();
+  $("#price-chatterbox").text((total_price * 12) + " /year");
+  $("#gb-selection-chatterbox").text(chatterbox_gb + " /month");
+  $("#contract-selection").text((total_price) + " /month");
 });
