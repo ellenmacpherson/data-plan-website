@@ -118,8 +118,12 @@ a.top-links.nav-item.nav-link {
   text-decoration: none;
 }
 
-.header-box button:hover {
+.header-box button {
   background-color: #FE1F4E;
+}
+
+.header-box button:hover {
+  background-color: #333;
   text-decoration: none;
 }
 
@@ -140,8 +144,15 @@ h2 {
   color: white;
 }
 
+.features {
+
+  padding: 0px;
+}
+
 .features-h2 {
   color: black;
+  font-size: 40px;
+  margin: 0 auto;
 }
 
 header p{
@@ -221,7 +232,7 @@ button:focus {
 }
 
 main {
-  padding: 20px;
+  padding: 60px;
   text-align: center;
 }
 
@@ -251,9 +262,14 @@ p {
 
 }
 
+ul {
+  padding: 20px 0px;
+}
+
 ul li {
   list-style: none;
   font-size: 28px;
+  padding: 0px;
 }
 
 .features {
@@ -395,7 +411,7 @@ footer a:hover {
 
   /* Add styles to the form container */
   .form-container {
-    max-width: 300px;
+    max-width: 350px;
     padding: 5px;
     background-color: white;
   }
@@ -472,4 +488,10 @@ form.form-container.fixed-bottom {
     font-size: 20px;
     padding: 10px;
 
+  }
+
+
+
+  #contact-page main label {
+    font-size: 22px;
   }
