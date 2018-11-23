@@ -5,12 +5,24 @@ body {
 
 nav  {
   background-color: #FE1F4E;
+  font-size: 22px;
 
+}
+
+.navbar-brand {
+  font-size: 30px;
+  padding-left: 100px;
 }
 
 a.top-links.nav-item.nav-link.active {
   padding: 10px 20px;
   color: #FAFAFA;
+}
+
+
+a.top-links.nav-item.nav-link.active:hover {
+  padding: 10px 20px;
+  color: #333;
 }
 
 a.top-links.nav-item.nav-link {
@@ -20,7 +32,7 @@ a.top-links.nav-item.nav-link {
 }
 
 .jumbotron-lone-wolf {
-  background-image: url("../images/lone-wolf.jpg");
+  background-image: url("../images/lonewolf-large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -55,6 +67,62 @@ a.top-links.nav-item.nav-link {
   height: 600px;
 }
 
+.header-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 400px;
+}
+
+.jumbotron-lone-wolf .header-box {
+  height: 325px;
+  width: 600px;
+  position: absolute;
+  margin-top: 130px;
+  padding: 20px;
+}
+
+.jumbotron-index .header-box {
+  height: 280px;
+  width: 600px;
+  position: absolute;
+  margin-top: 160px;
+  padding: 20px;
+}
+
+#chatterbox-jumbo .header-box {
+  margin-top: 80px;
+  position: absolute;
+  padding: 20px;
+  height: 340px;
+}
+
+#family-jumbo .header-box {
+  position: absolute;
+  margin-top: 50px;
+  padding: 20px;
+  height: 350px;
+
+}
+
+#contact-jumbo .header-box {
+  position: absolute;
+  margin-top: 50px;
+  padding: 30px;
+  height: 350px;
+  width: 600px;
+}
+
+
+.header-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-box button:hover {
+  background-color: #FE1F4E;
+  text-decoration: none;
+}
+
 
 h1.hero-header {
   color: #FAFAFA;
@@ -62,10 +130,18 @@ h1.hero-header {
 
 h1 {
   color: white;
-}
+  font-size: 78px;
+  position: relative;
+  max-width: 100%;
+
+  }
 
 h2 {
   color: white;
+}
+
+.features-h2 {
+  color: black;
 }
 
 header p{
@@ -74,12 +150,12 @@ header p{
 
 .contact-h1 {
   color: white;
-  font-size: 90px;
+  font-size: 70px;
 }
 
 .contact-h2 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2.index-h2 {
@@ -113,7 +189,7 @@ display: block;
 }
 
 button {
-  background-color: #330;
+  background-color: #333;
   padding: 20px;
   width: 150px;
   margin: 10px;
@@ -154,8 +230,6 @@ main {
 
 }
 
-
-
 #plans {
   width: 90%;
   margin: 0 auto;
@@ -165,6 +239,12 @@ main {
   background-image: url("images/family-large.jpg");
 }
 
+
+@media screen and (max-width: 1000px) {
+.card {
+  display: block;
+}
+}
 
 p {
   font-size: 28px;
@@ -180,10 +260,6 @@ ul li {
   padding: 20px;
 }
 
-h1 {
-  padding-top: 100px;
-  font-size: 78px;
-}
 
 h3 {
 
@@ -228,6 +304,16 @@ a.bottom-links.nav-item.nav-link {
 footer {
   background: #333;
   color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #FE1F4E;
+  text-decoration: none;
 }
 
 .legal ul li {
